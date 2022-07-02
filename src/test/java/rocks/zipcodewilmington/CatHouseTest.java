@@ -29,6 +29,7 @@ public class CatHouseTest {
     @After
     public void tearDown() {
         CatHouse.clear();
+        System.out.println("CatHouse cleared");
     }
 
     @Test

@@ -3,7 +3,7 @@ package rocks.zipcodewilmington;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import rocks.zipcodewilmington.animals.Dog;
+import rocks.zipcodewilmington.animals.*;
 
 import java.util.Date;
 
@@ -84,4 +84,17 @@ public class DogTest {
 
         Assert.assertEquals(exp, actual);
     }
+
+    @Test
+    public void testAnimalInheritance() {
+        Assert.assertTrue(dog instanceof Animal);
+    }
+
+    @Test
+    public void testMammalInheritance() {
+        Assert.assertTrue(dog instanceof Mammal);
+    }
 }
+
+
+

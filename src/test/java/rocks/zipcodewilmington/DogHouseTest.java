@@ -46,6 +46,7 @@ public class DogHouseTest {
     @After
     public void tearDown() {
         DogHouse.clear();
+        System.out.println("DogHouse cleared");
     }
 
     @Test
